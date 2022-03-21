@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
@@ -25,4 +26,8 @@ video {
 
 li {
   padding: 0px 10px;
+}
+
+section {
+  scroll-snap-align: start;
 }

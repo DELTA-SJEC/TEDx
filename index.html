@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/TEDxSJEC.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a949d2eecf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -27,10 +27,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav" style="width: 100%;">
                     <ul class="navbar-nav ms-auto" style="padding: 0px 10px;">
-                        <li class="nav-item"><a class="nav-link" href="#home"> HOME </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about"> ABOUT <span style="color: #FF2B06;">TEDx </span> SJEC </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#past"> PAST EDITION </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"> CONTACT </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home" style="color: white;"> HOME </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" style="color: white;"> ABOUT <span style="color: #FF2B06;">TEDx </span> SJEC </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#past" style="color: white;"> PAST EDITION </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" style="color: white;"> CONTACT </a></li>
                         <li class="nav-item"><button type="button" class="btn btn-danger" style="background-color: #FF2B06;font-weight: 600;" onclick="window.open('https://google.com')">REGISTER</button></li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@
     <section style="width: 100vw;height: 60vh;background-image: url('./assets/tedxback1.jpg');background-size: fill ;background-repeat: no-repeat;background-position: center;">
         <div class="container-fluid" style="backdrop-filter: blur(4px);width: 100%;height: inherit;justify-content: center;display: flex;">
             <div class="container-fluid" style="align-items: center;width: 80%;height: 60%;backdrop-filter: blur(50px);background-color: rgba(255,255,255,0.2);border-radius: 10px;position: absolute;top: 50%;transform: translate(0, -50%);justify-content: space-evenly;display: flex;">
-                <div class="row" style="position: absolute;top: 15px;font-size: 30px;color: #000;font-weight: 600;">
+                <div class="row" style="position: absolute;top: 15px;font-size: 30px;color: #fff;font-weight: 600;">
                     <p>Countdown to the event</p>
                 </div>
                 <div>
@@ -60,44 +60,44 @@
                 <div class="row" style="width: 80%;height: 80%;align-items: center;font-size: 40px;font-weight: 600;justify-content: center;text-align: center;" id="demo">
                     <!-- Day -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: black;border-radius: 10px;">
-                            <p style="color: aliceblue;font-size: 40px;font-weight: 400;padding: 25px 0px;font-weight: 400;" id="days">00</p>
+                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="days">00</p>
                         </div>
                     </div>
                     <div class="col">
-                        <p style="color: black;font-size: 40px;font-weight: 600;">D</p>
+                        <p style="color: white;font-size: 40px;font-weight: 600;">D</p>
                     </div>
 
 
 
                     <!-- Hours -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: black;border-radius: 10px;">
-                            <p style="color: aliceblue;font-size: 40px;font-weight: 400;padding: 25px 0px;font-weight: 400" id="hours">00</p>
+                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="hours">00</p>
                         </div>
                     </div>
                     <div class="col">
-                        <p style="color: black;font-size: 60px;font-weight: 600;">H</p>
+                        <p style="color: white;font-size: 60px;font-weight: 600;">H</p>
                     </div>
 
                     <!-- Minutes -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: black;border-radius: 10px;">
-                            <p style="color: aliceblue;font-size: 40px;font-weight: 400;padding: 25px 0px;font-weight: 400" id="mins">00</p>
+                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="mins">00</p>
                         </div>
                     </div>
                     <div class="col">
-                        <p style="color: black;font-size: 60px;font-weight: 600;">M</p>
+                        <p style="color: white;font-size: 60px;font-weight: 600;">M</p>
                     </div>
 
                     <!-- Seconds -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: black;border-radius: 10px;">
-                            <p style="color: aliceblue;font-size: 40px;font-weight: 400;padding: 25px 0px;font-weight: 400" id="secs">00</p>
+                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="secs">00</p>
                         </div>
                     </div>
                     <div class="col">
-                        <p style="color: black;font-size: 60px;font-weight: 600;">S</p>
+                        <p style="color: white;font-size: 60px;font-weight: 600;">S</p>
                     </div>
 
                 </div>
@@ -109,19 +109,27 @@
             <h1>About <span style="color: red;font-weight: 600;">TEDx</span> SJEC</h1>
             <div class="container-fluid" style="border: 2px solid white;width: 25%;float: left;background-color: white;"></div>
             <div class="container-fluid" style="width: 70%;left: 10;position: absolute;line-height: 25px;font-size: 20px;">
-                <p style="padding: 20px 0px;font-weight: 400;">TEDxSJEC is a platform that brings together curious, creative, and progressive thinkers from St. Joseph Engineering College to have a conversation about this year's theme: Ember. Featuring a dynamic group of speakers from diverse backgrounds
+                <p style="padding: 20px 0px;font-weight: 400;">TEDxSJEC is a platform that brings together curious, creative, and progressive thinkers from St. Joseph Engineering College to have a conversation about this year's theme: Ember. <br> Featuring a dynamic group of speakers from diverse backgrounds
                     and experiences who aim to impart inspiration and intellectual acceleration to young adults, enabling them to rekindle the dying fire and open up a world of opportunity by taking these students on a thought-provoking journey.</p>
             </div>
 
         </div>
-        <div class="container-fluid" style="color: #fff;font-weight: 600;position: absolute;bottom: 220px;left: 350px;justify-content: right;">
-            <h1><span style="color: red;font-weight: 600;left: 200px;">EMBER</span></h1>
-            <div class="container-fluid" style="border: 3px solid red;width: 15%;float: left;background-color: red;"></div>
-            <div class="container-fluid" style="width: 70%;left: 10;position: absolute;line-height: 25px;font-size: 20px;">
-                <p style="padding: 20px 0px;font-weight: 400;text-align: right;"> <span style="font-style: italic;">“Small things make a big difference”</span> , is something we've heard time and again. An ember, per Oxford English Dictionary, is defined as <span style="font-style: italic;">"a small piece of burning or glowing coal or wood in a dying
-                        fire".</span> It may sometimes be easy to lose hope in life, and the struggles may seem unending; But even when hardships tower over you and the times get dark, One must remember to always look for the light. Ember urges us to
-                    be that last ray of hope amidst the darkness for ourselves and others around us.</p>
-            </div>
+        <div class="container-fluid" style="border: 1px solid white;color: #fff;font-weight: 600;backdrop-filter: blur(30px);background-color: rgba(255,255,255,0.2);width: 70%;height: 40%;display: flex;justify-content: center;position: absolute;bottom: 40px;left: 15%;border-radius: 20px;">
+           <div class="container-fluid" style="width: 80%;height: inherit;">
+                <span style="color: white;text-align: center;font-size: 45px;font-weight: 600;position: absolute;top: 5%;left: 42%;">EMBER</span>
+                <div class="container-fluid" style="width: 30%;">
+                    <p style="text-align: center;font-weight: 400;position: absolute;top: 40%;left: 12%;width: 70%;">“Small things make a big difference”, is
+                        something we've heard time and again. An ember, per Oxford English Dictionary,
+                        is defined as "a small piece of burning or glowing coal or wood in a dying fire". It may sometimes be easy to lose
+                        hope
+                        in life, and the struggles may seem unending; But even when hardships tower over you and the times get dark, One
+                        must
+                        remember to always look for the light. Ember urges us to be that last ray of hope amidst the darkness for ourselves
+                        and
+                        others around us.
+                    </p>
+                </div>
+           </div>
         </div>
     </section>
     <section style="width: 100vw;height: 100vh;z-index: 1;background-color: white;" id="past">
@@ -133,7 +141,7 @@
             <div class="container-fluid" style="border: 2px solid red;width: 12%;float: left;background-color: red;"></div>
             <div class="container-fluid" style="width: 80%;left: 10;position: absolute;font-size: 20px;">
                 <a class="navbar-brand" href="#"><img src="./assets/TEDxSJEC.png" width="40%" alt="" style="padding: 20px 0px; "></a>
-                <p style="padding: 20px 0px;font-weight: 400;font-size: 20px;">Thank you for your interest in TEDx SJEC. To get in touch with us regarding sponsorships and other queries, drop an email to: <a href="mailto:" style="color: #FF2B06;"> tedxsjec@sjec.ac.in</a></p>
+                <p style="padding: 20px 0px;font-weight: 400;font-size: 20px;">Thank you for your interest in TEDx SJEC. To get in touch with us regarding sponsorships and other queries, drop an email to: <a href="mailto:" style="color: #FF2B06;text-decoration: none;"> tedxsjec@sjec.ac.in</a></p>
             </div>
         </div>
         <div class="container-fluid">
@@ -162,7 +170,7 @@
         </div>
         <div class="container-fluid align-items-center" style="background-color: #fff;width: 100%;height: 10%;position: absolute;bottom: 0;">
             <p style="color: #000;text-align: center;position: relative;top: 35%;font-size: 15px;">Copyright ©2022 All
-                    Rights Reserved | Made With By TEDx SJEC & <a href="https://github.com/DELTA-SJEC" style="color: #FF2B06;" target="_blank">DELTA
+                    Rights Reserved | Made With By TEDx SJEC & <a href="https://github.com/DELTA-SJEC" style="color: #FF2B06;text-decoration: none;" target="_blank">DELTA
                         SJEC</a> | This Independent TEDx Event Is
                     Operated Under License From TED.
             </p>

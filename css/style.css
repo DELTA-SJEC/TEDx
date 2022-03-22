@@ -3,6 +3,16 @@ html {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: red;
+}
+
+::selection {
+  color: white;
+  background: red;
+}
 
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
@@ -26,6 +36,19 @@ video {
 
 li {
   padding: 0px 10px;
+}
+
+li a:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+li a span:hover {
+  color: rgba(255, 0, 0, 0.5) !important;
+}
+
+button:hover {
+  background-color: #8f1803 !important;
+  border: none;
+  transition: ease-in-out 0.2s;
 }
 
 section {

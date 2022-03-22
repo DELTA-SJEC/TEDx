@@ -26,7 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav" style="width: 100%;">
-                    <ul class="navbar-nav ms-auto" style="padding: 0px 10px;">
+                    <ul class="navbar-nav ms-auto" style="padding: 0px 10px;font-weight: 600;">
                         <li class="nav-item"><a class="nav-link" href="#home" style="color: white;"> HOME </a></li>
                         <li class="nav-item"><a class="nav-link" href="#about" style="color: white;"> ABOUT <span style="color: #FF2B06;">TEDx </span> SJEC </a></li>
                         <li class="nav-item"><a class="nav-link" href="#past" style="color: white;"> PAST EDITION </a></li>
@@ -43,36 +43,36 @@
     <section style="width: 100vw;height: 100vh;" id="home">
         <video src="./assets/back.mp4" autoplay muted loop width="100%" style="position: fixed  ;z-index: -100;"></video>
         <div class="container-fluid" style="z-index:-100">
-            <h1 style="color: aliceblue;top: 35%;left: 35%;position: absolute;font-weight: 800;font-size: 150px;">EMBER</h1>
+            <h1 style="color: aliceblue;top: 35%;left: 35%;position: absolute;font-weight: 800;font-size: 150px;" class="theme">EMBER</h1>
             <h1 style="color: aliceblue;bottom: 150px;right: 20px;position: absolute;font-weight: 600;font-size: 80px;">JUNE 11</h1>
             <h1 style="color: #00D1FF;bottom: 50px;right: 20px;position: absolute;font-weight: 800;font-size: 80px;">2022</h1>
         </div>
     </section>
-    <section style="width: 100vw;height: 60vh;background-image: url('./assets/tedxback1.jpg');background-size: fill ;background-repeat: no-repeat;background-position: center;">
+    <section id="countdown" style="width: 100vw;height: 60vh;background-image: url('./assets/tedxback1.jpg');background-size: fill ;background-repeat: no-repeat;background-position: center;">
         <div class="container-fluid" style="backdrop-filter: blur(4px);width: 100%;height: inherit;justify-content: center;display: flex;">
             <div class="container-fluid" style="align-items: center;width: 80%;height: 60%;backdrop-filter: blur(50px);background-color: rgba(255,255,255,0.2);border-radius: 10px;position: absolute;top: 50%;transform: translate(0, -50%);justify-content: space-evenly;display: flex;">
                 <div class="row" style="position: absolute;top: 15px;font-size: 30px;color: #fff;font-weight: 600;">
-                    <p>Countdown to the event</p>
+                    <p id="cd">Countdown to the event</p>
                 </div>
                 <div>
 
                 </div>
-                <div class="row" style="width: 80%;height: 80%;align-items: center;font-size: 40px;font-weight: 600;justify-content: center;text-align: center;" id="demo">
+                <div id="countrow" class="row" style="width: 80%;height: 80%;align-items: center;font-size: 40px;font-weight: 600;justify-content: center;text-align: center;" id="demo">
                     <!-- Day -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                        <div id="boxday" class="container-fluid" style="background-color: white;border-radius: 10px;">
                             <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="days">00</p>
                         </div>
                     </div>
                     <div class="col">
-                        <p style="color: white;font-size: 40px;font-weight: 600;">D</p>
+                        <p id="dayz" style="color: white;font-size: 40px;font-weight: 600;">D</p>
                     </div>
 
 
 
                     <!-- Hours -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                        <div id="boxhour" class="container-fluid" style="background-color: white;border-radius: 10px;">
                             <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="hours">00</p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
 
                     <!-- Minutes -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                        <div id="boxmin" class="container-fluid" style="background-color: white;border-radius: 10px;">
                             <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="mins">00</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
 
                     <!-- Seconds -->
                     <div class="col">
-                        <div class="container-fluid" style="background-color: white;border-radius: 10px;">
+                        <div id="boxsec" class="container-fluid" style="background-color: white;border-radius: 10px;">
                             <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="secs">00</p>
                         </div>
                     </div>
@@ -104,21 +104,21 @@
             </div>
         </div>
     </section>
-    <section style="width: 100vw;height: 100vh;z-index: 1;background-color: transparent;backdrop-filter: blur(20px);" id="about">
+    <section id="about-section" style="width: 100vw;height: 100vh;z-index: 1;background-color: transparent;backdrop-filter: blur(20px);" id="about">
         <div class="container-fluid" style="color: #fff;font-weight: 600;position: absolute;top: 80px;left: 40px;">
             <h1>About <span style="color: red;font-weight: 600;">TEDx</span> SJEC</h1>
-            <div class="container-fluid" style="border: 2px solid white;width: 25%;float: left;background-color: white;"></div>
-            <div class="container-fluid" style="width: 70%;left: 10;position: absolute;line-height: 25px;font-size: 20px;">
+            <div id="about-underline" class="container-fluid" style="border: 2px solid white;width: 25%;float: left;background-color: white;"></div>
+            <div id="about-content" class="container-fluid" style="width: 70%;left: 10;position: absolute;line-height: 25px;font-size: 20px;">
                 <p style="padding: 20px 0px;font-weight: 400;">TEDxSJEC is a platform that brings together curious, creative, and progressive thinkers from St. Joseph Engineering College to have a conversation about this year's theme: Ember. <br> Featuring a dynamic group of speakers from diverse backgrounds
                     and experiences who aim to impart inspiration and intellectual acceleration to young adults, enabling them to rekindle the dying fire and open up a world of opportunity by taking these students on a thought-provoking journey.</p>
             </div>
 
         </div>
-        <div class="container-fluid" style="border: 1px solid white;color: #fff;font-weight: 600;backdrop-filter: blur(30px);background-color: rgba(255,255,255,0.2);width: 70%;height: 40%;display: flex;justify-content: center;position: absolute;bottom: 40px;left: 15%;border-radius: 20px;">
+        <div id="emberbox" class="container-fluid" style="border: 1px solid white;color: #fff;font-weight: 600;backdrop-filter: blur(30px);background-color: rgba(255,255,255,0.2);width: 70%;height: 40%;display: flex;justify-content: center;position: absolute;bottom: 40px;left: 15%;border-radius: 20px;">
            <div class="container-fluid" style="width: 80%;height: inherit;">
-                <span style="color: white;text-align: center;font-size: 45px;font-weight: 600;position: absolute;top: 5%;left: 42%;">EMBER</span>
+                <span id="embertitle" style="color: white;text-align: center;font-size: 45px;font-weight: 600;position: absolute;top: 5%;left: 42%;">EMBER</span>
                 <div class="container-fluid" style="width: 30%;">
-                    <p style="text-align: center;font-weight: 400;position: absolute;top: 40%;left: 12%;width: 70%;">“Small things make a big difference”, is
+                    <p id="ember-content" style="text-align: center;font-weight: 400;position: absolute;top: 40%;left: 12%;width: 70%;">“Small things make a big difference”, is
                         something we've heard time and again. An ember, per Oxford English Dictionary,
                         is defined as "a small piece of burning or glowing coal or wood in a dying fire". It may sometimes be easy to lose
                         hope
@@ -135,6 +135,8 @@
     <section style="width: 100vw;height: 100vh;z-index: 1;background-color: white;" id="past">
         <p>Hello World</p>
     </section>
+
+    <!-- Contact us section -->
     <section style="width: 100vw;height: 100vh;z-index: 1;background-color: transparent;backdrop-filter: blur(30px);" id="contact">
         <div class="container-fluid" style="color: #fff;font-weight: 600;position: absolute;top: 80px;left: 40px;">
             <h1 style="color: white;font-weight: 600;">Contact</h1>
@@ -151,11 +153,11 @@
                     <h1 style="font-size: 20px;font-weight: 400;color: #fff;">Faculty co-ordinator</h1>
                 </div>
                 <div class="col" style="position: absolute;bottom: 30%;left: 35%;">
-                    <h1 style="font-size: 40px;font-weight: 600;color: #fff;">Janice</h1>
+                    <h1 style="font-size: 40px;font-weight: 600;color: #fff;">Janice Mendes</h1>
                     <h1 style="font-size: 20px;font-weight: 400;color: #fff;">Licencee and organizer</h1>
                 </div>
                 <div class="col" style="position: absolute;bottom: 30%;left: 65%;">
-                    <h1 style="font-size: 40px;font-weight: 600;color: #fff;">Sarah</h1>
+                    <h1 style="font-size: 40px;font-weight: 600;color: #fff;">Sarah Ann Augustian</h1>
                     <h1 style="font-size: 20px;font-weight: 400;color: #fff;">Co-organizer</h1>
                 </div>
             </div>
@@ -176,6 +178,7 @@
             </p>
         </div>
     </section>
+    <!-- End of contact us section -->
 </body>
 
 </html>

@@ -54,3 +54,79 @@ button:hover {
 section {
   scroll-snap-align: start;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  html {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  .navbar-brand {
+    width: 30%;
+  }
+  .theme {
+    font-size: 40px;
+  }
+  #countdown {
+    height: 30vh;
+  }
+  #cd {
+    font-size: 20px;
+  }
+  #boxday {
+    width: 15%;
+    height: inherit;
+  }
+  #boxhour {
+    width: 15%;
+    height: inherit;
+  }
+  #boxmin {
+    width: 15%;
+    height: inherit;
+  }
+  #boxsec {
+    width: 15%;
+    height: inherit;
+  }
+  #countrow {
+    font-size: 20px !important;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+  }
+  #dayz {
+    font-size: 10px;
+  }
+  #about-section {
+    height: 160vh !important;
+  }
+  #about-underline {
+    width: 60% !important;
+  }
+  #about-content {
+    font-size: 15px !important;
+    width: 90% !important;
+    line-height: 15px;
+    left: 0 !important;
+  }
+  #emberbox {
+    width: 90% !important;
+    left: 5% !important;
+  }
+  #embertitle {
+    font-size: 40px !important;
+    text-align: center;
+    left: 35% !important;
+  }
+  #ember-content {
+    font-size: 15px !important;
+    width: 90% !important;
+    line-height: 20px;
+    top: 30% !important;
+    left: 5% !important;
+  }
+}

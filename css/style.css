@@ -65,20 +65,32 @@ section {
     width: 100%;
   }
   .navbar-brand {
-    width: 30%;
+    width: 60% !important;
   }
-  .theme {
-    font-size: 40px;
+  #theme {
+    font-size: 80px !important;
+    left: 10% !important;
+    top: 20% !important;
+  }
+  #dat {
+    font-size: 40px !important;
+    left: 30% !important;
+    top: 40% !important;
+  }
+  #year {
+    font-size: 50px !important;
+    left: 32% !important;
+    top: 50% !important;
   }
   #countdown {
-    height: 30vh;
+    height: 40vh !important;
   }
   #cd {
     font-size: 20px;
   }
   #boxday {
-    width: 15%;
-    height: inherit;
+    width: 15% !important;
+    height: 10% !important;
   }
   #boxhour {
     width: 15%;
@@ -101,7 +113,7 @@ section {
   #dayz {
     font-size: 10px;
   }
-  #about-section {
+  #about {
     height: 140vh !important;
   }
   #about-underline {

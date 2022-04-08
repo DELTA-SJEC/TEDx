@@ -1,279 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
-    <script src="./js/glider.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/glider.css">
-    <script src="https://kit.fontawesome.com/a949d2eecf.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>TEDx SJEC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@450;600;800;900&display=swap" rel="stylesheet">
 </head>
-
-<body>
-    <script>
-        window.addEventListener('load', function() {
-            new Glider(document.querySelector('.glider'), {
-                slidesToShow: 5,
-                slidesToScroll: 2,
-                draggable: true,
-                dots: '.dots',
-                arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
-                }
-            })
-        });
-    </script>
+<body> 
     <header>
-        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 99999;background-color: rgba(0,0,0,0.3) !important;backdrop-filter: blur(4px) !important;width: 100%;position: fixed;">
+        <nav class="navbar navbar-expand-lg navbar-light nav_bg fixed-top" style="box-shadow: 0 10px 15px -2px rgba(0,0,0,.2) !important;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/TEDxSJEC.png" width="30%" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <a class="navbar-brand" href="#"><span class="nav-ted">
+                    <!-- TEDx</span> SJEC -->
+                    <img src="./assets/TEDxSJEC.png" alt="" width="160px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="main_nav" style="width: 100%;">
-                    <ul class="navbar-nav ms-auto" style="padding: 0px 10px;font-weight: 600;">
-                        <li class="nav-item"><a class="nav-link" href="#home" style="color: white;"> HOME </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" style="color: white;"> ABOUT <span style="color: #FF2B06;">TEDx </span> SJEC </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#past" style="color: white;"> PAST EDITION </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact" style="color: white;"> CONTACT </a></li>
-                        <li class="nav-item"><button type="button" class="btn btn-danger" style="background-color: #FF2B06;font-weight: 600;" onclick="window.open('https://google.com')">REGISTER</button></li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <div class="container-fluid">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="float: right;justify-content: space-evenly;display: flex;">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#speakers">Speakers and Performers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#past">Past Edition</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Meet the team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-danger">Register Now</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- navbar-collapse.// -->
             </div>
-            <!-- container-fluid.// -->
         </nav>
     </header>
 
-    <section style="width: 100vw;height: 100vh;" id="home">
-        <video src="https://cdn.vigneshcodes.in/api/public/dl/BOI-9XLT?inline=true" autoplay muted loop width="100%" style="position: fixed  ;z-index: -100;"></video>
-        <div class="container-fluid" style="z-index:-100">
-            <h1 style="color: aliceblue;top: 35%;left: 35%;position: absolute;font-weight: 800;font-size: 150px;" id="theme">EMBER</h1>
-            <h1 style="color: aliceblue;bottom: 150px;right: 20px;position: absolute;font-weight: 600;font-size: 80px;" id="dat">JUNE 11</h1>
-            <h1 style="color: #00D1FF;bottom: 50px;right: 20px;position: absolute;font-weight: 800;font-size: 80px;" id="year">2022</h1>
-        </div>
-        <div class="container-fluid" style="width: 100%;height: 60%;position: absolute;bottom: 0;justify-content: center; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));;z-index: -99;"></div>
-    </section>
-    <section id="countdown" style="width: 100vw;height: 60vh;background-image: url('./assets/tedxback1.jpg');background-size: fill ;background-repeat: no-repeat;background-position: center;">
-        <div class="container-fluid" style="backdrop-filter: blur(4px);width: 100%;height: inherit;justify-content: center;display: flex;">
-            <div class="container-fluid" style="align-items: center;width: 80%;height: 60%;backdrop-filter: blur(60px);border: 1px solid white;background-color: rgba(255,255,255,0.2);border-radius: 10px;position: relative;top: 50%;transform: translate(0, -50%);justify-content: space-evenly;display: flex;">
-                <div class="row" style="position: absolute;top: 15px;font-size: 30px;color: #fff;font-weight: 600;">
-                    <p id="cd">Countdown to the event</p>
-                </div>
-                <div>
-
-                </div>
-                <div id="countrow" class="row" style="width: 80%;height: 80%;align-items: center;font-size: 40px;font-weight: 600;justify-content: center;text-align: center;" id="demo">
-                    <!-- Day -->
-                    <div class="col">
-                        <div id="boxday" class="container-fluid" style="background-color: white;border-radius: 10px;">
-                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="days">00</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <p id="dayz" style="color: white;font-size: 40px;font-weight: 600;">D</p>
-                    </div>
-
-
-
-                    <!-- Hours -->
-                    <div class="col">
-                        <div id="boxhour" class="container-fluid" style="background-color: white;border-radius: 10px;">
-                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="hours">00</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <p style="color: white;font-size: 60px;font-weight: 600;">H</p>
-                    </div>
-
-                    <!-- Minutes -->
-                    <div class="col">
-                        <div id="boxmin" class="container-fluid" style="background-color: white;border-radius: 10px;">
-                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="mins">00</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <p style="color: white;font-size: 60px;font-weight: 600;">M</p>
-                    </div>
-
-                    <!-- Seconds -->
-                    <div class="col">
-                        <div id="boxsec" class="container-fluid" style="background-color: white;border-radius: 10px;">
-                            <p style="color: black;font-size: 40px;font-weight: 600;padding: 25px 0px;" id="secs">00</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <p style="color: white;font-size: 60px;font-weight: 600;">S</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about" style="width: 100vw;height: 100vh;z-index: 1;background-color: transparent;backdrop-filter: blur(20px);" id="about">
-        <div class="container-fluid" style="color: #fff;font-weight: 600;position: relative;top: 80px;left: 40px;">
-            <h1>About <span style="color: red;font-weight: 600;">TEDx</span> SJEC</h1>
-            <div id="about-underline" class="container-fluid" style="border: 2px solid white;width: 25%;float: left;background-color: white;"></div>
-            <div id="about-content" class="container-fluid" style="width: 70%;left: 10;position: absolute;line-height: 25px;font-size: 20px;">
-                <p style="padding: 20px 0px;font-weight: 400;">TEDxSJEC is a platform that brings together curious, creative, and progressive thinkers from St. Joseph Engineering College to have a conversation about this year's theme: Ember. <br> Featuring a dynamic group of speakers from diverse
-                    backgrounds and experiences who aim to impart inspiration and intellectual acceleration to young adults, enabling them to rekindle the dying fire and open up a world of opportunity by taking these students on a thought-provoking journey.</p>
-            </div>
-
-        </div>
-        <div id="emberbox" class="container-fluid" style="border: 1px solid white;color: #fff;font-weight: 600;backdrop-filter: blur(30px);background-color: rgba(255,255,255,0.2);width: 70%;height: 40%;display: flex;justify-content: center;position: relative;bottom: 40px;border-radius: 20px;">
-            <div class="container-fluid" style="width: 80%;height: inherit;">
-                <span id="embertitle" style="color: white;text-align: center;font-size: 45px;font-weight: 600;position: absolute;top: 5%;left: 42%;">EMBER</span>
-                <div class="container-fluid" style="width: 30%;">
-                    <p id="ember-content" style="text-align: center;font-weight: 400;position: absolute;top: 40%;left: 12%;width: 70%;">“Small things make a big difference”, is something we've heard time and again. An ember, per Oxford English Dictionary, is defined as "a small piece of burning or glowing coal or wood in a dying fire". It may sometimes be easy to lose
-                        hope in life, and the struggles may seem unending; But even when hardships tower over you and the times get dark, One must remember to always look for the light. Ember urges us to be that last ray of hope amidst the darkness for
-                        ourselves and others around us.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="width: 100vw;height: 100vh;z-index: 1;background-color: white;" id="past">
-        <div class="container-fluid" style="position: relative; top:70px;">
-            <h1 style="color: black;font-weight: 600;">Past Edition</h1>
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div style="width: 80vw; height: 75vh; background-color: #000; border-radius: 10px;">
-                        <div style="position: relative; top: 20px; left: 20px;">
-                            <p style="color: #fff;font-weight: 500;font-size:250%">TEDxSJEC</p>
-                        </div>
-                        <div style="position: relative; bottom:-380px; right: -795px;">
-                            <p style="font-size: 300%; color: #ff0a3f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 600;">Love conqures all</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="width: 100vw;height: 70vh;z-index: 1;background-color: white;">
-        <div class="container-fluid" style="position: relative; top:70px;">
-            <div class="row justify-content-center">
-                <h1 style="color: black;font-weight: 600;">Past Speakers</h1>
-                <div class="col">
-                    <div class="glider-contain" style="height:100%; margin:6px;">
-                        <div class="glider" style="scrollbar-width: none;">
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; box-shadow: 1px 2px 5px #bbb; margin:15px auto; width:70%; height:38vh;">
-                                    <img width="75%" src="./assets/tempHuman.jpg" alt="">
-                                    <p style="font-weight:500; text-align: center;">Jane Doe</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button aria-label="Previous" class="glider-prev" style="left:0;">«</button>
-                        <button aria-label="Next" class="glider-next" style="right:0;">»</button>
-                        <div role="tablist" class="dots"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Contact us div -->
-    <section style="width: 100vw;height: 100vh;z-index: 1;background-color: transparent;backdrop-filter: blur(30px);" id="contact">
-        <div class="container-fluid" style="color: #fff;font-weight: 600;position: relative;top: 80px;left: 40px;">
-            <h1 style="color: white;font-weight: 600;">Contact</h1>
-            <div class="container-fluid" style="border: 2px solid red;width: 12%;float: left;background-color: red;"></div>
-            <div id="contact-note-container" class="container-fluid" style="width: 80%;left: 10;position: relative;font-size: 20px;">
-                <a class="navbar-brand" href="#"><img src="./assets/TEDxSJEC.png" width="40%" alt="" style="padding: 20px 0px; "></a>
-                <p id="contact-thanks" style="padding: 20px 0px;font-weight: 400;font-size: 20px;">Thank you for your interest in TEDx SJEC. To get in touch with us regarding sponsorships and other queries, drop an email to: <a href="mailto:" style="color: #FF2B06;text-decoration: none;"> tedxsjec@sjec.ac.in</a></p>
-            </div>
-        </div>
-        <div class="container-fluid" style="margin-top:10%;padding: 0px 40px;">
+    <!-- Home Section -->
+    
+    <section class="home" id="home">
+        <div class="container" id="home-land">
             <div class="row">
-                <div class="col" style="position: relative;bottom: 30%;">
-                    <h1 id="faculty" style="font-size: 40px;font-weight: 600;color: #fff;">Dr. Binu KG</h1>
-                    <h1 id="faculty-name" style="font-size: 20px;font-weight: 400;color: #fff;">Faculty co-ordinator</h1>
+                <div class="col-md">
+                    <div class="row">
+                        <h1>EM<span style="color: rgb(215, 7, 7);">B</span>ER</h1>
+                    </div>
+                    <div class="row">
+                        <h3>June 11 <sup>th</sup></h3>
+                    </div>
+                    <div class="row">
+                        <h4>2022</h4>
+                    </div>
                 </div>
-                <div class="col" style="position: relative;bottom: 30%;">
-                    <h1 id="org" style="font-size: 40px;font-weight: 600;color: #fff;">Janice Mendes</h1>
-                    <h1 id="org-name" style="font-size: 20px;font-weight: 400;color: #fff;">Licencee and organizer</h1>
-                </div>
-                <div class="col" style="position: relative;bottom: 30%;">
-                    <h1 id="coorg" style="font-size: 40px;font-weight: 600;color: #fff;">Sarah Ann Augustian</h1>
-                    <h1 id="coorg-name" style="font-size: 20px;font-weight: 400;color: #fff;">Co-organizer</h1>
+                <div class="col-md">
+                    <img src="./assets/1.png" class="vector1" width="60%">
+                    <img src="./assets/2.png" class="vector2" width="60%">
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
         <div class="container-fluid">
-            <div class="grid">
-                <div class="col" style="position: relative;bottom: 10%;left: 5%;">
-                    <h1 style="font-size: 20px;font-weight: 600;color: #fff;">Spread the word !</h1>
-                    <!-- <h1 style="font-size: 20px;font-weight: 400;color: #fff;"></h1> -->
+            <div class="col">
+                <div class="row">
+                    <h1>About</h1>
+                </div>
+                <div class="dash"></div>
+                <div class="container-fluid pt-5">
+                    <div class="row">
+                        <div class="col-md" style="width: 60%;">
+                            <p>TEDxSJEC is a platform that brings together curious, creative, and progressive thinkers from St. Joseph
+                                Engineering
+                                College to have a conversation about this year's theme: Ember.
+                                Featuring a dynamic group of speakers from diverse backgrounds and experiences who aim to impart inspiration
+                                and
+                                intellectual acceleration to young adults, enabling them to rekindle the dying fire and open up a world of
+                                opportunity
+                                by taking these students on a thought-provoking journey.</p>
+                        </div>
+                        <div class="col-md" style="display: flex;justify-content: center;align-items: flex-start;">
+                            <div class="container-fluid" style="display: flex;justify-content: center;align-items: center;width: 40%;height: 120%;background: #f3f3f3;
+box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%;">
+                                <center>
+                                    <img src="./assets/ember_logo_black.png" width="70%" style="position: relative;" class="pb-5">
+                                </center>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers and Performers Section -->
+    <section class="speakers" id="speakers">
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row">
+                    <h1>Speakers</h1>
+                </div>
+                <div class="dash-speakers"></div>
+                <div class="container-fluid pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                               <img src="./Speakers/Dr LC Soans.jpg" alt="">
+                                                <h5 class="pt-2">Dr LC Soans</h5>
+                                                <h6>Soans Farms</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+
+
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/1.jpg" alt="">
+                                                <h5 class="pt-2">Mr Nithin Vas</h5>
+                                                <h6>Paper Seed Co</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/Mr Zeeshan Ramlam.jpg" alt="">
+                                                <h5 class="pt-2">Mr Zeeshan Ramlam</h5>
+                                                <h6>Management Leader,<br> Director and head- HR Coinswitch</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/Ms Shivangi Sharma.jpeg" alt="">
+                                                <h5 class="pt-2">Ms Shivangi Sharma</h5>
+                                                <h6>Travel Blogger</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+
+                    </div>
+                    <div class="container pt-5 pb-5">
+
+                    </div>
+                    <div class="row pt-5 pb-5">
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/Ms Chavvi Dawar.jpg" alt="">
+                                                <h5 class="pt-2">Ms Chavvi Dawar</h5>
+                                                <h6>Child Rights Activist , Social educator</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                    
+                    
+                        
+                    
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/1.jpg" alt="">
+                                                <h3 class="pt-2">Front Header</h3>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                    
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/1.jpg" alt="">
+                                                <h3 class="pt-2">Front Header</h3>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/1.jpg" alt="">
+                                                <h3 class="pt-2">Front Header</h3>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <h1>Performers</h1>
+                </div>
+                <div class="dash-performers"></div>
+                <div class="container-fluid pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/Dr LC Soans.jpg" alt="">
+                                                <h5 class="pt-2">Remona Evette Pereria</h5>
+                                                <h6>Classical Arts</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                
+                
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/1.jpg" alt="">
+                                                <h5 class="pt-2">V Minor</h5>
+                                                <h6>Band</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/Mr Zeeshan Ramlam.jpg" alt="">
+                                                <h5 class="pt-2">Anu Karagada</h5>
+                                                <h6>Management</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                
+                        <div class="col-md">
+                            <div class="cards">
+                                <div class="one-card">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="col">
+                                                <img src="./Speakers/Mr Zeeshan Ramlam.jpg" alt="">
+                                                <h5 class="pt-2">Anu Karagada</h5>
+                                                <h6>Management</h6>
+                                            </div>
+                                        </div>
+                                        <!--End Front-->
+                                        <div class="back">
+                                            <div class="content">
+                                                <h3>Back Header</h3>
+                                                <p>Back Paragraph</p>
+                                            </div>
+                                            <!--End Content-->
+                                        </div>
+                                        <!---End Back-->
+                                    </div><!-- End Card-->
+                                </div>
+                                <!--End One Card-->
+                            </div>
+                            <!--End Cards-->
+                        </div>
+                
+                
+                    </div>
+                    <div class="container pt-5 pb-5">
+                
+                    </div>
                 </div>
             </div>
         </div>
 
+        
+        
     </section>
-    <section class="container-fluid align-items-center" style="background-color: #fff;width: 100%;height: 20%;bottom: 0;">
-        <p id="copyright" style="color: #000;text-align: center;position: relative;top: 35%;font-size: 15px;padding: 10px 0px;">Copyright ©2022 All Rights Reserved | Made With By TEDx SJEC & <a href="https://github.com/DELTA-SJEC" style="color: #FF2B06;text-decoration: none;" target="_blank">DELTA
-                    SJEC</a> | This Independent TEDx Event Is Operated Under License From TED.
-        </p>
-    </section>
-    <!-- End of contact us div -->
-</body>
 
+
+
+    <!-- Past Editions Section -->
+    <section class="past" id="past">
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row ">
+                    <h1>Past Edition</h1>
+                </div>
+                <div class="dash-team"></div>
+                <div class="container-fluid pt-5">
+                    <div class="row">
+                        <div class="col-md">
+                            <video src="./assets/aftermovie.mp4" poster="./assets/thumbnail.png" width="800px" controls></video>
+                        </div>
+                        <div class="col-md">
+                            <a href="https://drive.google.com/drive/u/0/folders/1dO5X8bvvVF_-SonIWFpkTZgq47JzaRGU" target="_blank">
+                                <div class="container-fluid" id="past-images">
+                                <h2>Image Gallery</h2>
+                            </div>
+                            </a>
+                            
+                            <div class="row pt-4">
+                                <div class="col">
+                                    <div class="container-fluid" id="past-team">
+                                        <h2>More </h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.youtube.com/watch?v=8liVbJrdGi0&list=PLsRNoUx8w3rPMEpEe6C4ZtB4U-aApf9vU" target="_blank">
+                                        <div class="container-fluid" id="past-talks">
+                                            <h2>Watch Talks </h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row">
+                    <h1>Meet the team</h1>
+                </div>
+                <div class="dash-team"></div>
+                <div class="container-fluid pt-5">
+                    <div class="row">
+                        <div class="col-sm">
+                
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Team/Janice.jpeg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2 ">
+                                    <h3>Janice Mendes</h3>
+                                    <h6>Licencee and Organizer</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Team/sarah.jpeg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2">
+                                    <h3>Sarah Ann Augustian</h3>
+                                    <h6>Co-organizer</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2">
+                                    <h3>Dr. Binu K G</h3>
+                                    <h6>Faculty Co-ordinator</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2">
+                                    <h3>Kevin Pinto</h3>
+                                    <h6>Graphic Designer</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-sm">
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2">
+                                    <h3>Lizina Crasto</h3>
+                                    <h6>Lead Curator</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                        <div class="col-sm">
+                    
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2">
+                                    <h3>Neil lobo</h3>
+                                    <h6>3D Artist</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                        
+                        <div class="col-sm">
+                            <!-- Speaker container -->
+                            <div class="speaker-container">
+                                <div class="speaker-img">
+                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                                </div>
+                                <div class="speaker-info pt-2">
+                                    <h3>Shanwill Pinto</h3>
+                                    <h6>Web Developer</h4>
+                                </div>
+                            </div>
+                            <!-- End Speaker Container -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row">
+                    <h1>Contact</h1>
+                </div>
+                <div class="dash-contact"></div>
+                <div class="col-md pt-5">
+                    <img src="./assets/TEDxSJEC.png" alt="" width="20%">
+                    <h6>Thank you for your interest in TEDx SJEC. To get in touch with us regarding sponsorships and other queries, drop an
+                    email to: <a href="mailto:tedxsjec@sjec.ac.in" style="color: red;">tedxsjec@sjec.ac.in</a> </h6>
+                    
+                </div>
+                <div class="container-fluid pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="container-fluid">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9520360835395!2d74.89648861525045!3d12.910804319701683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba359dfac132663%3A0xa7bf228838232d32!2sSt%20Joseph%20Engineering%20College!5e0!3m2!1sen!2sin!4v1649410154956!5m2!1sen!2sin"
+                                    width="100%" height="450" style="border:5px solid black;border-radius: 20px;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="row">
+                                <div class="col-md">
+                                    <h3>Address</h3>
+                                    <p>St. Joseph Engineering College,<br>
+                                        Vamanjoor,Mangalore - 575028<br>
+                                        Karnataka, India<br>
+                                    </p>
+                                </div>
+                                <div class="col-md">
+                                    <h3>Contact</h3>
+                                    <p>Dr. Binu K G : <a href="tel:+91-9739866947" style="color: red;">+91-9739866947</a> <br>
+                                    
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer font-small black">
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white;background-color: black;padding: 0px 10px;">Copyright ©2022 All Rights Reserved | Made With By <span style="color: red;">TEDx SJEC & <a href="https://github.com/DELTA-SJEC" target="_blank" style="color: red;">DELTA SJEC</a> </span>  | This Independent TEDx Event Is Operated
+        Under License From TED
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+</body>
 </html>

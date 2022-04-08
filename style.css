@@ -1,0 +1,478 @@
+html{
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: black;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a :hover{
+    color: rgb(152, 152, 152);
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.nav-ted{
+    font-weight: 800 !important;
+    color: red;
+}
+
+.nav-item{
+    font-weight: 600 !important;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn{
+    font-weight: 600 !important;
+}
+
+.btn :hover:before{
+    color: white !important;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: rgba(255,255,255, 0.6) !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(50px);
+    border: none !important;
+}
+
+.home{
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-land{
+    animation: 1s ease-in-out 0s 1 slideInFromRight;
+}
+.about {
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 60px;
+}
+
+.about h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.dash{
+    width: 10%;
+    height: 8px;
+    background-color: red;
+}
+
+.dash-performers {
+    width: 17%;
+    height: 8px;
+    background-color: red;
+}
+
+.dash-team {
+    width: 27%;
+    height: 8px;
+    background-color: red;
+}
+
+.team h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.dash-speakers {
+    width: 15%;
+    height: 8px;
+    background-color: red;
+}
+.dash-contact {
+    width: 16%;
+    height: 8px;
+    background-color: red;
+}
+.speakers {
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+    width: 100%;
+    height: 150vh;
+}
+
+.team img{
+    border-radius: 50%;
+    border: 6px solid black;
+}
+
+.speakers h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.speakers img{
+    border-radius: 50%;
+}
+
+.past {
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+}
+#past-images{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background-color: black;
+    background: url('./assets/img.png');
+    object-fit: contain;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#past-talks {
+    width: 100%;
+    
+    height: 240px;
+    border-radius: 20px;
+    background-color: black;
+    background: url('./assets/watch.png');
+    color: white;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#past-talks h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+video{
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+    border-radius:20px;
+    border:5px solid red;
+}
+
+.contact {
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 60px;
+}
+.contact h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.home h1{
+    font-size: 15rem;
+    font-weight: 800;
+    color: #000;
+}
+.about p{
+    font-size: 1.5rem;
+    font-weight: 400;;
+}
+.home h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.home h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.team {
+    background-color: white;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+    width: 100%;
+    height: 100vh;
+}
+
+.past h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.cards {
+    width: 100%;
+}
+
+.one-card {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    background: transparent !important;
+    
+    /* Set the depth of the elements */
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+.container-contact{
+    width: 100%;
+    height: 10%;
+    background-color: #000;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    border: none;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    cursor: pointer;
+        /* Set the transition effects */
+        -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card:active {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.card .front,
+.card .back {border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    /*Font Color*/
+    text-align: center;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card .front img{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.card .front {border-radius: 20px;
+    background: black;border: 5px solid red;
+}
+
+.card .back {
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #620000, #000000);
+    border: 5px solid black;
+    /*Set Backside to flipped */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.card h6{
+    color: rgb(139, 211, 240);
+    font-size: 0.9rem;
+}
+#past-team {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    background-color: black;
+    background: url('./assets/teamold.JPG');
+    object-fit: cover;
+    color: white;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .home{
+        height: 100vh;
+    }
+    .home h1{
+        font-size:5rem;
+    }
+    .home h3{
+        font-size:1.5rem;
+    }
+    .home h4{
+        font-size:1.5rem;
+    }
+    .dash{
+        width: 50% !important;
+    }
+    .dash-speakers{
+        width: 70% !important;
+    }
+    .dash-performers{
+        width: 85% !important;
+    }
+    .dash-team{
+        width: 70% !important;
+    }
+    .dash-contact{
+        width: 60% !important;
+    }
+    .about{
+        padding: 0px !important;
+    }
+    .team{
+        height: 250vh !important;
+    }
+    .past{
+        height: 180vh !important;
+        padding: 0px !important;
+    }
+    .past h2{
+        font-size: 1.5rem !important;
+    }
+    .speakers{
+        padding: 0px !important;
+        height: 150vh;
+    }
+    .contact {
+        padding: 0px !important;
+        height: 160vh;
+    }
+    .contact p{
+        font-size: 0.8rem !important;
+    }
+    footer{
+        font-size: 0.6rem;
+    }
+    #past-images{
+        height: 100% !important;
+    }
+    #past-images {
+        height: 100% !important;
+    }
+    #past-team {
+        width: 100%;
+        height: 240px;
+        border-radius: 20px;
+        background-color: black;
+        background: url('./assets/watch.png');
+        color: white;
+        border: 5px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about p {
+        font-size: 1.2rem;
+    }
+    video {
+        width: 320px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        border-radius: 20px;
+    }
+    .card{
+        height: 200px;
+    }
+    .one-card {
+        position: relative;
+        float: left;
+        width: 60%;
+        min-height: 100px;
+        background: transparent !important;
+    
+        /* Set the depth of the elements */
+        -webkit-perspective: 800px;
+        -moz-perspective: 800px;
+        -o-perspective: 800px;
+        perspective: 800px;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

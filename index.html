@@ -9,18 +9,263 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@450;600;800;900&display=swap" rel="stylesheet">
 </head>
-<body> 
+<body>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()" style="top: 10%;">&times;</span>
+        <div class="modal-content">
+    
+            <div class="mySlides">
+                <div class="numbertext">1 / 46</div>
+                <img src="./assets/2020/1.JPG" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">2 / 46</div>
+                <img src="./assets/2020/2.JPG" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">3 / 46</div>
+                <img src="./assets/2020/3.JPG" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">4 / 46</div>
+                <img src="./assets/2020/4.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 46</div>
+                <img src="./assets/2020/5.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">6 / 46</div>
+                <img src="./assets/2020/6.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">7 / 46</div>
+                <img src="./assets/2020/7.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">8 / 46</div>
+                <img src="./assets/2020/8.JPG" style="width:100%">
+            </div>
+            
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 46</div>
+                <img src="./assets/2020/9.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">10 / 46</div>
+                <img src="./assets/2020/10.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">11 / 46</div>
+                <img src="./assets/2020/11.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">12 / 46</div>
+                <img src="./assets/2020/12.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">13 / 46</div>
+                <img src="./assets/2020/13.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">14 / 46</div>
+                <img src="./assets/2020/14.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">15 / 46</div>
+                <img src="./assets/2020/15.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">16 / 46</div>
+                <img src="./assets/2020/16.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">17 / 46</div>
+                <img src="./assets/2020/17.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">18 / 46</div>
+                <img src="./assets/2020/18.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">19 / 46</div>
+                <img src="./assets/2020/19.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">20 / 46</div>
+                <img src="./assets/2020/20.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">21 / 46</div>
+                <img src="./assets/2020/21.JPG" style="width:100%">
+            </div>
+
+
+            <div class="mySlides">
+                <div class="numbertext">22 / 46</div>
+                <img src="./assets/2020/22.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">23 / 46</div>
+                <img src="./assets/2020/23.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">24 / 46</div>
+                <img src="./assets/2020/24.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">25 / 46</div>
+                <img src="./assets/2020/25.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">26 / 46</div>
+                <img src="./assets/2020/26.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">27 / 46</div>
+                <img src="./assets/2020/27.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">28 / 46</div>
+                <img src="./assets/2020/28.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">29 / 46</div>
+                <img src="./assets/2020/29.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">30 / 46</div>
+                <img src="./assets/2020/30.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">31 / 46</div>
+                <img src="./assets/2020/31.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">32 / 46</div>
+                <img src="./assets/2020/32.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">33 / 46</div>
+                <img src="./assets/2020/33.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">34 / 46</div>
+                <img src="./assets/2020/34.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">35 / 46</div>
+                <img src="./assets/2020/35.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">36 / 46</div>
+                <img src="./assets/2020/36.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">37 / 46</div>
+                <img src="./assets/2020/37.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">38 / 46</div>
+                <img src="./assets/2020/38.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">39 / 46</div>
+                <img src="./assets/2020/39.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">40 / 46</div>
+                <img src="./assets/2020/40.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">41 / 46</div>
+                <img src="./assets/2020/41.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">42 / 46</div>
+                <img src="./assets/2020/42.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">43 / 46</div>
+                <img src="./assets/2020/43.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">44 / 46</div>
+                <img src="./assets/2020/44.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">45 / 46</div>
+                <img src="./assets/2020/45.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">46 / 46</div>
+                <img src="./assets/2020/47.JPG" style="width:100%">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    
+    
+            
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light nav_bg fixed-top" style="box-shadow: 0 10px 15px -2px rgba(0,0,0,.2) !important;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><span class="nav-ted">
-                    <!-- TEDx</span> SJEC -->
                     <img src="./assets/TEDxSJEC.png" alt="" width="160px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -92,8 +337,8 @@
                 </div>
                 <div class="dash"></div>
                 <div class="container-fluid pt-5">
-                    <div class="row">
-                        <div class="col-md" style="width: 60%;">
+                    <div class="row" style="display: flex;flex-wrap: nowrap;">
+                        <div class="col-6 col-sm-3" style="width: 60%;" id="about-wrap">
                             <p>TEDxSJEC is a platform that brings together curious, creative, and progressive thinkers from St. Joseph
                                 Engineering
                                 College to have a conversation about this year's theme: Ember.
@@ -103,9 +348,8 @@
                                 opportunity
                                 by taking these students on a thought-provoking journey.</p>
                         </div>
-                        <div class="col-md" style="display: flex;justify-content: center;align-items: flex-start;">
-                            <div class="container-fluid" style="display: flex;justify-content: center;align-items: center;width: 40%;height: 120%;background: #f3f3f3;
-box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%;">
+                        <div class="col-6 col-sm-3" style="display: flex;justify-content: center;align-items: flex-start;margin-left: 140px;" id="logo-theme">
+                            <div class="container-fluid " style="display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;background: #f3f3f3;box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%;">
                                 <center>
                                     <img src="./assets/ember_logo_black.png" width="70%" style="position: relative;" class="pb-5">
                                 </center>
@@ -126,9 +370,9 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                     <h1>Speakers</h1>
                 </div>
                 <div class="dash-speakers"></div>
-                <div class="container-fluid pt-5 pb-5">
+                <div class="container-fluid py-5">
                     <div class="row">
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -156,7 +400,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                         </div>
 
 
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -183,7 +427,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                             <!--End Cards-->
                         </div>
 
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -191,7 +435,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                                             <div class="col">
                                                 <img src="./Speakers/Mr Zeeshan Ramlam.jpg" alt="">
                                                 <h5 class="pt-2">Mr Zeeshan Ramlam</h5>
-                                                <h6>Management Leader,<br> Director and head- HR Coinswitch</h6>
+                                                <h6><span class="zeeshan">Management Leader,</span> <br> Director and head- HR Coinswitch</h6>
                                             </div>
                                         </div>
                                         <!--End Front-->
@@ -209,8 +453,8 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                             </div>
                             <!--End Cards-->
                         </div>
-
-                        <div class="col-md">
+                        
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -238,11 +482,8 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                         </div>
 
                     </div>
-                    <div class="container pt-5 pb-5">
-
-                    </div>
-                    <div class="row pt-5 pb-5">
-                        <div class="col-md">
+                    <div class="row ">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -272,7 +513,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                     
                         
                     
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -298,7 +539,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                             <!--End Cards-->
                         </div>
                     
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -323,7 +564,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                             </div>
                             <!--End Cards-->
                         </div>
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -352,13 +593,13 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                     
                     </div>
                 </div>
-                <div class="row pt-5">
+                <div class="row ">
                     <h1>Performers</h1>
                 </div>
                 <div class="dash-performers"></div>
                 <div class="container-fluid pt-5 pb-5">
                     <div class="row">
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -386,7 +627,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                         </div>
                 
                 
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -413,7 +654,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                             <!--End Cards-->
                         </div>
                 
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -440,7 +681,7 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                             <!--End Cards-->
                         </div>
                 
-                        <div class="col-md">
+                        <div class="col-6 col-sm-3">
                             <div class="cards">
                                 <div class="one-card">
                                     <div class="card">
@@ -493,14 +734,12 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                 <div class="container-fluid pt-5">
                     <div class="row">
                         <div class="col-md">
-                            <video src="./assets/aftermovie.mp4" poster="./assets/thumbnail.png" width="800px" controls></video>
+                            <video src="./assets/aftermovie.mp4" poster="./assets/thumbnail.png" width="800px" controls preload="auto"></video>
                         </div>
                         <div class="col-md">
-                            <a href="https://drive.google.com/drive/u/0/folders/1dO5X8bvvVF_-SonIWFpkTZgq47JzaRGU" target="_blank">
-                                <div class="container-fluid" id="past-images">
+                                <div class="container-fluid" id="past-images"  onclick="openModal();currentSlide(1)">
                                 <h2>Image Gallery</h2>
                             </div>
-                            </a>
                             
                             <div class="row pt-4">
                                 <div class="col">
@@ -531,106 +770,94 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                     <h1>Meet the team</h1>
                 </div>
                 <div class="dash-team"></div>
-                <div class="container-fluid pt-5">
+                <div class="container-fluid pt-5 justify-content-center">
                     <div class="row">
-                        <div class="col-sm">
+                        <div class="col-6 col-sm-2">
                 
                             <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Team/Janice.jpeg" alt="" width="45%" height="45%">
+                            <div class="speaker-container py-2">
+                                <div class="speaker-img" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="./Team/Janice.jpeg" alt="" width="70%">
                                 </div>
-                                <div class="speaker-info pt-2 ">
+                                <div class="speaker-info pt-2 " style="text-align: center;">
                                     <h3>Janice Mendes</h3>
                                     <h6>Licencee and Organizer</h4>
                                 </div>
                             </div>
                             <!-- End Speaker Container -->
                         </div>
-                        <div class="col-sm">
+                        <div class="col-6 col-sm-2">
                             <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Team/sarah.jpeg" alt="" width="45%" height="45%">
+                            <div class="speaker-container py-2" >
+                                <div class="speaker-img" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="./Team/sarah.jpeg" alt="" width="70%">
                                 </div>
-                                <div class="speaker-info pt-2">
-                                    <h3>Sarah Ann Augustian</h3>
+                                <div class="speaker-info pt-2" style="text-align: center;">
+                                    <h3>Sarah Augustian</h3>
                                     <h6>Co-organizer</h4>
                                 </div>
                             </div>
                             <!-- End Speaker Container -->
                         </div>
-                        <div class="col-sm">
+                        <div class="col-6 col-sm-2">
                             <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                            <div class="speaker-container py-2">
+                                <div class="speaker-img" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="./Speakers/1.jpg" alt="" width="70%" ">
                                 </div>
-                                <div class="speaker-info pt-2">
-                                    <h3>Dr. Binu K G</h3>
-                                    <h6>Faculty Co-ordinator</h4>
-                                </div>
-                            </div>
-                            <!-- End Speaker Container -->
-                        </div>
-                        <div class="col-sm">
-                            <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
-                                </div>
-                                <div class="speaker-info pt-2">
+                                <div class="speaker-info pt-2" style="text-align: center;">
                                     <h3>Kevin Pinto</h3>
                                     <h6>Graphic Designer</h4>
                                 </div>
                             </div>
                             <!-- End Speaker Container -->
                         </div>
-                    </div>
-                    <div class="row pt-5">
-                        <div class="col-sm">
+                        <div class="col-6 col-sm-2 justify-content-center">
                             <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                            <div class="speaker-container py-2">
+                                <div class="speaker-img" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="./Speakers/1.jpg" alt="" width="70%">
                                 </div>
-                                <div class="speaker-info pt-2">
+                                <div class="speaker-info pt-2" style="text-align: center;">
                                     <h3>Lizina Crasto</h3>
                                     <h6>Lead Curator</h4>
                                 </div>
                             </div>
                             <!-- End Speaker Container -->
                         </div>
-                        <div class="col-sm">
-                    
+                        <div class="col-6 col-sm-2">
+                        
                             <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                            <div class="speaker-container py-2">
+                                <div class="speaker-img" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="./Speakers/1.jpg" alt="" width="70%">
                                 </div>
-                                <div class="speaker-info pt-2">
-                                    <h3>Neil lobo</h3>
+                                <div class="speaker-info pt-2" style="text-align: center;">
+                                    <h3>Neil Lasrado</h3>
                                     <h6>3D Artist</h4>
                                 </div>
                             </div>
                             <!-- End Speaker Container -->
                         </div>
                         
-                        <div class="col-sm">
+                        <div class="col-6 col-sm-2">
                             <!-- Speaker container -->
-                            <div class="speaker-container">
-                                <div class="speaker-img">
-                                    <img src="./Speakers/1.jpg" alt="" width="45%" height="45%">
+                            <div class="speaker-container py-2">
+                                <div class="speaker-img" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="./Speakers/1.jpg" alt="" width="70%">
                                 </div>
-                                <div class="speaker-info pt-2">
+                                <div class="speaker-info pt-2" style="text-align: center;">
                                     <h3>Shanwill Pinto</h3>
                                     <h6>Web Developer</h4>
                                 </div>
                             </div>
                             <!-- End Speaker Container -->
                         </div>
-                        
                     </div>
+                    <!-- <div class="row pt-5">
+                        
+                        
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -644,13 +871,13 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                     <h1>Contact</h1>
                 </div>
                 <div class="dash-contact"></div>
-                <div class="col-md pt-5">
+                <div class="col-md py-3">
                     <img src="./assets/TEDxSJEC.png" alt="" width="20%">
-                    <h6>Thank you for your interest in TEDx SJEC. To get in touch with us regarding sponsorships and other queries, drop an
+                    <h6 class="py-4" style="font-size: 20px;">Thank you for your interest in TEDx SJEC. To get in touch with us regarding sponsorships and other queries, drop an
                     email to: <a href="mailto:tedxsjec@sjec.ac.in" style="color: red;">tedxsjec@sjec.ac.in</a> </h6>
                     
                 </div>
-                <div class="container-fluid pt-5 pb-5">
+                <div class="container-fluid py-2">
                     <div class="row">
                         <div class="col-md">
                             <div class="container-fluid">
@@ -675,8 +902,15 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
                                     <p>Dr. Binu K G : <a href="tel:+91-9739866947" style="color: red;">+91-9739866947</a> <br>
                                     
                                     </p>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col">
+                                    <h3 style="font-weight: 600 !important;">Spread the word !</h3>
+                                    <button class="bubbly-button" onclick="window.open('https://www.instagram.com/accounts/login/?next=/tedxsjec/')">Instagram</button>
+                                </div>
+                                
+                            </div>
                 </div>
             </div>
         </div>
@@ -685,12 +919,67 @@ box-shadow:  20px 20px 60px #b4b2b2, -20px -20px 60px #ffffff;border-radius: 50%
     <footer class="page-footer font-small black">
     
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3" style="color: white;background-color: black;padding: 0px 10px;">Copyright ©2022 All Rights Reserved | Made With By <span style="color: red;">TEDx SJEC & <a href="https://github.com/DELTA-SJEC" target="_blank" style="color: red;">DELTA SJEC</a> </span>  | This Independent TEDx Event Is Operated
+        <div class="footer-copyright text-center py-3" style="color: white;background-color: black;padding: 0px 10px;">Copyright ©2022 All Rights Reserved | Built with ❤️ by <span style="color: white;"> TEDx SJEC & <a href="https://github.com/DELTA-SJEC" target="_blank" style="color: white;">DELTA SJEC</a> </span>  | This Independent TEDx Event Is Operated
         Under License From TED
         </div>
         <!-- Copyright -->
     
     </footer>
     <!-- Footer -->
+    <script>
+       function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+            // captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+        var animateButton = function (e) {
+
+                e.preventDefault;
+                //reset animation
+                e.target.classList.remove('animate');
+
+                e.target.classList.add('animate');
+                setTimeout(function () {
+                    e.target.classList.remove('animate');
+                }, 700);
+            };
+
+            var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+            for (var i = 0; i < bubblyButtons.length; i++) {
+                bubblyButtons[i].addEventListener('click', animateButton, false);
+            }
+    </script>
 </body>
 </html>

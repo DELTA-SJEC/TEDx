@@ -172,7 +172,7 @@ section{
     height: 40%;
     border-radius: 20px;
     background-color: black;
-    background: url('./assets/img.png');
+    background: url('../img.png');
     object-fit: contain;
     color: white;
     display: flex;
@@ -185,7 +185,7 @@ section{
     height: 240px;
     border-radius: 20px;
     background-color: black;
-    background: url('./assets/watch.png');
+    background: url('../watch.png');
     color: white;
     border: 5px solid red;
     display: flex;
@@ -357,7 +357,7 @@ video{
     height: 240px;
     border-radius: 20px;
     background-color: black;
-    background: url('./assets/teamold.JPG');
+    background: url('../teamold.JPG');
     object-fit: cover;
     color: white;
     border: 5px solid red;
@@ -447,7 +447,7 @@ video{
         height: 240px;
         border-radius: 20px;
         background-color: black;
-        background: url('./assets/watch.png');
+        background: url('../watch.png');
         color: white;
         border: 5px solid red;
         display: flex;

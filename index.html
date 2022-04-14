@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@450;600;800;900&display=swap" rel="stylesheet">
 </head>
@@ -306,25 +306,29 @@
     <!-- Home Section -->
     
     <section class="home" id="home">
-        <div class="container" id="home-land">
-            <div class="row">
-                <div class="col-md">
-                    <div class="row">
-                        <h1>EM<span style="color: rgb(215, 7, 7);">B</span>ER</h1>
+        <div id="particles-js">
+            <div style="background-color: transparent" class="container" id="home-land">
+            
+                <div class="row">
+                    <div class="col-md">
+                        <div class="row">
+                            <h1>EM<span style="color: rgb(215, 7, 7);">B</span>ER</h1>
+                        </div>
+                        <div class="row">
+                            <h3>June 11 <sup>th</sup></h3>
+                        </div>
+                        <div class="row">
+                            <h4>2022</h4>
+                        </div>
                     </div>
-                    <div class="row">
-                        <h3>June 11 <sup>th</sup></h3>
+                    <div class="col-md">
+                        <img src="./assets/1.png" class="vector1" width="60%">
+                        <img src="./assets/2.png" class="vector2" width="60%">
                     </div>
-                    <div class="row">
-                        <h4>2022</h4>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <img src="./assets/1.png" class="vector1" width="60%">
-                    <img src="./assets/2.png" class="vector2" width="60%">
                 </div>
             </div>
         </div>
+        
     </section>
 
     <!-- About Section -->
@@ -926,6 +930,9 @@
     
     </footer>
     <!-- Footer -->
+
+    <script src="./assets/js/particles.js"></script>
+<script src="./assets/js/app.js"></script>
     <script>
        function openModal() {
             document.getElementById("myModal").style.display = "block";

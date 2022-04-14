@@ -725,3 +725,17 @@ img {
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
 }
+
+#particles-js {
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.particles-js-canvas-el{
+	position: absolute;
+	z-index:2;
+}

@@ -141,7 +141,7 @@ section{
     align-items: center;
     padding: 0px 60px;
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     
 }
 
@@ -172,7 +172,7 @@ section{
     height: 40%;
     border-radius: 20px;
     background-color: black;
-    background: url('../img.png');
+    background: url('https://ik.imagekit.io/shanwill/img_KyKpiopYC.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650900051232');
     object-fit: contain;
     color: white;
     display: flex;
@@ -185,7 +185,7 @@ section{
     height: 240px;
     border-radius: 20px;
     background-color: black;
-    background: url('../watch.png');
+    background: url('https://ik.imagekit.io/shanwill/watch_eUnar2-qK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650900064241');
     color: white;
     border: 5px solid red;
     display: flex;
@@ -209,7 +209,7 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     padding: 0px 60px;
 }
 .contact h1 {
@@ -403,7 +403,7 @@ video{
     }
     .team{
         height: 120vh !important;
-        padding: 0 !important;
+        padding: 20px 0px !important;
     }
     .past{
         height: 180vh !important;
@@ -414,8 +414,8 @@ video{
     }
     .speakers{
         padding: 0px !important;
-        height: 150vh;
-        margin-top: 220px;
+        height: 100vh !important;
+        margin-top: 0px;
     }
     .contact {
         padding: 0px !important;
@@ -447,7 +447,7 @@ video{
         height: 240px;
         border-radius: 20px;
         background-color: black;
-        background: url('../watch.png');
+        background: url('https://ik.imagekit.io/shanwill/teamold_jGOkfIoFL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1650900052526');
         color: white;
         border: 5px solid red;
         display: flex;

@@ -126,7 +126,12 @@ section {
   font-size: 3rem;
   font-weight: 800;
 }
-
+.team-img img {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 .dash-speakers {
   width: 15%;
   height: 8px;
@@ -193,7 +198,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 
 #past-talks {
   width: 100%;
@@ -824,7 +828,6 @@ video {
 }
 
 @keyframes octocat-wave {
-
   0%,
   100% {
     transform: rotate(0);
@@ -1123,12 +1126,11 @@ video {
   top: -50px;
 }
 
-
 .material-card.mc-active .mc-content {
   padding-top: 5.6em;
 }
 
-.material-card.mc-active>.mc-content>.img-container {
+.material-card.mc-active > .mc-content > .img-container {
   margin-top: 0 !important;
 }
 
@@ -1154,6 +1156,12 @@ video {
     left: auto;
     padding: 50px 30px 70px 30px;
     bottom: 0;
+  }
+  .team-img img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
   }
 }
 
@@ -2392,5 +2400,6 @@ h3 {
 
 #speaker-box {
   display: inline-block;
+  font-family: Raleway !important;
   /* padding: 0; */
 }
